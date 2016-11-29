@@ -1,0 +1,198 @@
+body {
+	margin: 0px;
+	background-image: url('images/bg.png');
+	background-color: black;
+	background-size: 100%;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+::selection {
+	background: rgba(255, 0, 0, 0.3);
+}
+::-moz-selection {
+	background: rgba(255, 0, 0, 0.3);
+}
+#errordiv {
+	display: inline-block;
+	font-size: 7vmin;
+	text-align: center;
+}
+#errorspan {
+	display: inline-block;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+a:hover {
+	color: rgb(200, 0, 0);
+}
+#error_vertical_centered {
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+#float_left_top {
+	position: absolute;
+	left: 2vmin;
+	top: 2vmin;
+	padding: 2vmin;
+	padding-right: 3vmin;
+	font-size: 5vmin;
+	z-index: 1;
+	background: black;
+	border-style: solid;
+	border-color: rgb(150, 0, 0);
+	border-width: 1vmin;
+	border-radius: 3vmin;
+}
+#float_left_top:hover {
+	background: rgb(15, 15, 15);
+	cursor: pointer;
+}
+#name_indicator {
+	font-family: 'Covered By Your Grace', cursive;
+	text-transform: uppercase;
+}
+#room_indicator {
+	font-family: 'EB Garamond', serif;
+	font-size: 5vmin;
+}
+.room_indicator_room {
+	font-family: 'Cinzel', serif;
+	font-size: 5vmin;
+}
+.room_character {
+	font-size: 5vmin;
+}
+.centered_box {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.connecting_box {
+	text-align: center;
+	width: 80vmin;
+}
+.big_red_border {
+	border-style: solid;
+	border-width: 3vmin;
+	border-radius: 12vmin;
+	border-color: rgb(150, 0, 0);
+	width: 80vmin;
+	height: 80vmin;
+}
+.smaller_inner_box {
+	width: 70vmin;
+	height: 70vmin;
+	border-radius: 6vmin;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,383838+100 */
+	background: #000000;
+	background: -moz-linear-gradient(top, #000000 0%, #383838 100%);
+	background: -webkit-linear-gradient(top, #000000 0%,#383838 100%);
+	background: linear-gradient(to bottom, #000000 0%,#383838 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#383838',GradientType=0 );
+}
+@-webkit-keyframes change_to_red_and_back {
+	0%	 {color: white;}
+	50%	{color: red;}
+	100% {color: white;}
+}
+@keyframes change_to_red_and_back {
+	0%	 {color: white;}
+	50%	{color: red;}
+	100% {color: white;}
+}
+.glowing_input {
+	-webkit-animation-name: change_to_red_and_back;
+	-webkit-animation-duration: 0.2s;
+	animation-name: change_to_red_and_back;
+	animation-duration: 0.2s;
+}
+.input {
+	width: 60vmin;
+	height: 9vmin;
+	font-size: 7vmin;
+	padding: 2vmin;
+	background: black;
+	color: white;
+	border-style: solid;
+	border-color: rgb(100, 0, 0);
+	text-align: center;
+	text-transform: uppercase;
+}
+.title {
+	font-size: 6vmin;
+	font-weight: bold;
+}
+.input:focus {
+	outline-width: 0;
+}
+.align_center {
+	text-align: center;
+}
+.decent_font {
+	font-size: 5vmin;
+	font-family: 'Coming Soon', cursive;
+}
+.margins {
+	margin: 3vmin;
+	margin-top: 5vmin;
+	margin-bottom: 5vmin;
+}
+.margins_count {
+	margin: 3vmin;
+	margin-top: 5vmin;
+	margin-bottom: 5vmin;
+}
+.button {
+	border-style: solid;
+	border-color: rgb(150, 0, 0);
+	border-width: 1vmin;
+	border-radius: 2vmin;
+	padding: 1vmin;
+	padding-bottom: 0vmin;
+	background: black;
+	width: 30vmin;
+}
+.button:hover {
+	background: rgb(15, 15, 15);
+	cursor: pointer;
+}
+#username_input {
+	font-family: 'Covered By Your Grace', cursive;
+}
+#game_code_input {
+	font-family: 'EB Garamond', serif;
+	padding-top: -3vmin;
+	padding-bottom: 4vmin;
+	font-size: 8vmin;
+}
+#player_count {
+	font-size: 20vmin;
+}
+.margin_up {
+	margin-top: 2vmin;
+}
+.centered_box_down {
+	position: fixed;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+}
+.full_box {
+	height: 90vh;
+	width: 60vh;
+}
+#card_image {
+	height: 80vh;
+}
