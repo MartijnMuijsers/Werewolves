@@ -72,6 +72,10 @@ public enum Role {
 	CUPID_WOLF("Cupid Wolf", "Cupidowolf"),
 	GAMBLER("Gambler", "Gokker");
 	
+	static {
+		IOUtils.createDirectory("role_packs");
+	}
+	
 	private static final int defaultNumberOfCardImages = 2;
 	private static final String unknownEnglishDescription = "Details unknown";
 	private static final String unknownDutchDescription = "Details onbekend";
