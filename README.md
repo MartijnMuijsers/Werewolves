@@ -1,5 +1,5 @@
 # **<center>Werewolves</center>**
-<center>A server and client to play the popular game Werewolves using phones or other devices</center>
+*<center>A server and client to play the popular game Werewolves using phones or other devices</center>*
 
 ## Components
 ### Java server
