@@ -6,9 +6,9 @@ import lombok.Getter;
 
 /**
  * CardDealtMessage (server -> client)
- * - role enum name
+ * - role identifier
  * - image id
- * - role name
+ * - role title
  * - empty string
  * - role description
  * - empty string
@@ -36,9 +36,9 @@ public class CardDealtMessage extends ServerToClientMessage {
 	public List<Object> getData() {
 		List<Object> data = super.getData();
 		Role role = card.getRole();
-		data.add(role.name());
+		data.add(role.getIdentifier());
 		data.add(card.getImageID());
-		data.add(role.getName());
+		data.add(role.getTitle());
 		data.add("");
 		data.add(role.getDescription());
 		data.add("");

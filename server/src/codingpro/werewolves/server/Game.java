@@ -61,11 +61,11 @@ public class Game {
 	public void logDealtCards() {
 		Log.response("--- Dealt cards in game " + getCode() + " ---");
 		for (Entry<Username, RoleCard> entry : getDealtCards().entrySet()) {
-			Log.response(entry.getKey()+" : " + entry.getValue().getRole().getName());
+			Log.response(entry.getKey()+" : " + entry.getValue().getRole().getTitle());
 		}
 		Log.response("--- Undealt cards in game " + getCode() + " ---");
 		for (RoleCard undealtCard : getUndealtCards()) {
-			Log.response(undealtCard.getRole().getName());
+			Log.response(undealtCard.getRole().getTitle());
 		}
 	}
 	

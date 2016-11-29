@@ -14,7 +14,7 @@ public class RoleCard {
 	protected final int imageID;
 	
 	public String getImageFilename() {
-		return role.name()+imageID+".svg.png";
+		return role.getIdentifier()+imageID+".png";
 	}
 	
 	public RoleCard(Role role) {
