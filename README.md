@@ -11,6 +11,8 @@ A collection of files (*.php* amongst others) to be served by a web server such 
 ### Running the server
 Compile the Java server from source and run it (for example as a *.jar* file). Also, start a web server such as Apache and let it serve the web files (make sure that you have added a resource pack). There are some configurations to be set in both, specifically the preferred server ip and port.
 ### Managing the games
-The server has a **/help** command that shows all available commands. There are commands to create a game, and later start it when enough players have joined.
+The server has a **help** command that shows all available commands. There are commands to create a game, and later start it when enough players have joined.
+
+The current only way to choose which cards to distribute in a game is to use the **synccards &lt;code&gt;** command. This will load the cards from the auto-generated file *cards_to_sync.txt*.
 ### Joining a game
 Players can use their device to open the website (using the ip pointing to the web server started earlier). They can then easily join the game using the right game code.
