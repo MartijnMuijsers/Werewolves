@@ -25,4 +25,12 @@ public final class IOUtils {
 		return false;
 	}
 	
+	/**
+	 * @return whether or not the directory had to be created AND that was successful
+	 */
+	public static boolean createDirectory(String path) {
+		File file = new File(path);
+		return file.mkdirs();
+	}
+	
 }
