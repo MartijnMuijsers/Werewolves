@@ -20,7 +20,7 @@ import lombok.Setter;
 
 public class Game {
 	
-	private static final String cardsFilePath = "C:/Users/s129248/Desktop/werewolfcards.txt";
+	public static final String cardsFilePath = "cards_to_sync.txt";
 	
 	private final int id;
 	@Getter
@@ -31,6 +31,7 @@ public class Game {
 	private List<RoleCard> cards;
 	
 	private Game(int id, GameCode code, List<RoleCard> cards) {
+		IOUtils.createFileIfNotExists(cardsFilePath);
 		this.id = id;
 		this.code = code;
 		this.cards = cards;

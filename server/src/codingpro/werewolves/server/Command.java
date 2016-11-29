@@ -15,7 +15,7 @@ public enum Command {
 	CARDS("cards <code>", "See all dealt cards in a game"),
 	EXIT("exit", "Stop the server"),
 	SETCARDS("setcards <code>", "Load the cards from the cards file into a game"),
-	SYNCCARDS("synccards <code>", "Keep loading the cards from the cards file into a game"),
+	SYNCCARDS("synccards <code>", "Keep loading the cards from the cards file (" + Game.cardsFilePath + ") into a game"),
 	ECHO("echo", "Echoes", false),
 	WHY("why", "Answers an existential question", false);
 	
