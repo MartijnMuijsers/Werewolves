@@ -8,10 +8,10 @@ import lombok.Getter;
  * CardDealtMessage (server -> client)
  * - role enum name
  * - image id
- * - english role name
- * - dutch role name
- * - english role description
- * - dutch role description
+ * - role name
+ * - empty string
+ * - role description
+ * - empty string
  * - image filename
  */
 public class CardDealtMessage extends ServerToClientMessage {
@@ -38,10 +38,10 @@ public class CardDealtMessage extends ServerToClientMessage {
 		Role role = card.getRole();
 		data.add(role.name());
 		data.add(card.getImageID());
-		data.add(role.getEnglishName());
-		data.add(role.getDutchName());
-		data.add(role.getEnglishDescription());
-		data.add(role.getDutchDescription());
+		data.add(role.getName());
+		data.add("");
+		data.add(role.getDescription());
+		data.add("");
 		data.add(card.getImageFilename());
 		return data;
 	}

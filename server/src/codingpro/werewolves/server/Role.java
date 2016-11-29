@@ -77,38 +77,31 @@ public enum Role {
 	}
 	
 	private static final int defaultNumberOfCardImages = 2;
-	private static final String unknownEnglishDescription = "Details unknown";
-	private static final String unknownDutchDescription = "Details onbekend";
+	private static final String unknownDescription = "Details unknown";
 	
 	@Getter
 	private final int numberOfCardImages;
 	@Getter
-	private final String englishName;
+	private final String name;
 	@Getter
-	private final String dutchName;
-	@Getter
-	private final String englishDescription;
-	@Getter
-	private final String dutchDescription;
+	private final String description;
 	
-	private Role(String englishName, String dutchName) {
-		this(defaultNumberOfCardImages, englishName, dutchName);
+	private Role(String name) {
+		this(defaultNumberOfCardImages, name);
 	}
 	
-	private Role(String englishName, String dutchName, String englishDescription, String dutchDescription) {
-		this(defaultNumberOfCardImages, englishName, dutchName, englishDescription, dutchDescription);
+	private Role(String name, String description) {
+		this(defaultNumberOfCardImages, name, description);
 	}
 	
-	private Role(int numberOfCardImages, String englishName, String dutchName) {
-		this(numberOfCardImages, englishName, dutchName, unknownEnglishDescription, unknownDutchDescription);
+	private Role(int numberOfCardImages, String name) {
+		this(numberOfCardImages, name, unknownDescription);
 	}
 	
-	private Role(int numberOfCardImages, String englishName, String dutchName, String englishDescription, String dutchDescription) {
+	private Role(int numberOfCardImages, String name, String description) {
 		this.numberOfCardImages = numberOfCardImages;
-		this.englishName = englishName;
-		this.dutchName = dutchName;
-		this.englishDescription = englishDescription;
-		this.dutchDescription = dutchDescription;
+		this.name = name;
+		this.description = description;
 	}
 	
 	/**
@@ -118,8 +111,7 @@ public enum Role {
 		text = StringUtils.normalize(text);
 		for (Role role : values()) {
 			if (StringUtils.normalize(role.name()).equals(text) ||
-					StringUtils.normalize(role.getEnglishName()).equals(text) ||
-					StringUtils.normalize(role.getDutchName()).equals(text)) {
+					StringUtils.normalize(role.getName()).equals(text)) {
 				return role;
 			}
 		}
