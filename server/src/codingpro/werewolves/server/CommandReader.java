@@ -158,8 +158,7 @@ public class CommandReader implements Runnable {
 				break;
 				case EXIT:
 				{
-					Log.response("Exiting...");
-					System.exit(0);
+					WerewolvesServer.exit();
 				}
 				break;
 				case SETCARDS:

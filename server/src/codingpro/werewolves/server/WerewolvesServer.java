@@ -19,6 +19,7 @@ public class WerewolvesServer extends WebSocketServer {
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
 		Log.info("Starting Werewolves server...");
+		Role.loadRoles();
 		String serverIP = Config.get().getServerIP();
 		int serverPort = Config.get().getServerPort();
 		Log.info("Binding address: " + serverIP + ":" + serverPort);
@@ -37,6 +38,11 @@ public class WerewolvesServer extends WebSocketServer {
 			instance.stop();
 		}
 		Log.info("Closing...");
+		System.exit(0);
+	}
+	
+	public static void exit() {
+		Log.info("Exiting...");
 		System.exit(0);
 	}
 	
