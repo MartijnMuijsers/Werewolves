@@ -126,7 +126,7 @@ public final class Config {
 	@Getter
 	private String serverIP = "localhost";
 	@Getter
-	private int serverPort = 25565;
+	private int serverPort = 9907;
 	@Getter
 	private String rolePack = "";
 	
