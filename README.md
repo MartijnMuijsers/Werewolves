@@ -12,11 +12,17 @@ A collection of files (*.php* amongst others) to be served by a web server such 
 
 ## Requirements
 
+Server-side:
+
 * Pretty much any version of Windows, Linux, Mac or FreeBSD and most other operating systems works
 * Java 8 or higher
 * Apache or another web server supporting PHP (XAMPP for Windows)
 * *If compiling from source*:
  * Maven
+
+Client-side:
+* Works in Google Chrome on any Windows device and most Android and Apple devices; most other browsers do not support CSS3 or web sockets sufficiently
+* Must have a connection to the internet to see the right fonts
 
 ## Installation instructions
 
