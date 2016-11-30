@@ -5,7 +5,7 @@ import lombok.Getter;
 public enum Command {
 	
 	NON_EXISTENT,
-	CREATE("create", "Creates a new game"),
+	CREATE("create [code]", "Creates a new game (possibly with a given code, random otherwise)"),
 	START("start <code>", "Starts a game"),
 	STOP("stop <code>", "Stops a game"),
 	REMOVE("remove <code>", "Removes a game"),
