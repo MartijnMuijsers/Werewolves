@@ -14,7 +14,7 @@ A collection of files (*.php* amongst others) to be served by a web server such 
 
 * Pretty much any version of Windows, Linux, Mac or FreeBSD and most other operating systems works
 * Java 8 or higher
-* Apache, Tomcat or another web server supporting PHP
+* Apache or another web server supporting PHP (XAMPP for Windows)
 * *If compiling from source*:
  * Maven
 
