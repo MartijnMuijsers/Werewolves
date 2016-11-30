@@ -1,5 +1,6 @@
 <?php
 
+// This ip and port will be used client-side so keeping localhost will NOT work
 const SERVER_IP = 'localhost';
 const SERVER_PORT = 9907;
 const BROWSER_ERROR_PAGE = 'error.php';
