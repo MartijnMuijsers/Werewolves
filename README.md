@@ -27,7 +27,7 @@ Client-side:
 ## Installation instructions
 
 ### Getting *werewolves.jar*
-You can either download the latest version of Werewolves [here](https://mega.nz/#!rsRDxKwY!iIVD5TgC6lLLMmXmGjK6LYUz98ycYfQeFXmTauID9qE "Click to download werewolves.jar"), or you can compile it from source. If you compile from source, you will need Maven.
+You can either download the latest version of Werewolves [here](https://mega.nz/#!rsRDxKwY!iIVD5TgC6lLLMmXmGjK6LYUz98ycYfQeFXmTauID9qE "Click to download werewolves.jar") ([mirror](https://www.dropbox.com/s/36rh5emf97b1j3f/werewolves.jar?dl=0 "Click to download werewolves.jar")), or you can compile it from source. If you compile from source, you will need Maven.
 
 ### Running the server
 You can run the *werewolves.jar* from any terminal or console using *java -jar werewolves.jar*. The first time you run the server, it will generate a number of files, such as *config.txt* (which has the configuration, where you can change the ip and port) and a *role_packs* folder. It will automatically close again, since there is no role pack added yet.
@@ -36,7 +36,7 @@ You can run the *werewolves.jar* from any terminal or console using *java -jar w
 Additionally, start a web server (such as Apache) with the web server files (in Apache, that would be in the *htdocs* folder, for other servers it may be in *public_html* or something similar). Make sure to fill in the correct server ip and port in *config.php* (these are the ip and port of the Java server).
 
 ### Adding a role pack
-You must add a role pack to play Werewolves. No role pack is included at the moment (for good reasons) but there is a separate role pack downloadable [here](https://mega.nz/#!SoxEmCba!Dj8HDGk16LIR05_CQpcuBNwDeXEaoN2PJkt0pKSddxI "Click to download role pack"), which has a *README.txt* file with instructions how to set up the role pack (it's just a bit of copying and a few configuration edits).
+You must add a role pack to play Werewolves. No role pack is included at the moment (for good reasons) but there is a separate role pack downloadable [here](https://mega.nz/#!SoxEmCba!Dj8HDGk16LIR05_CQpcuBNwDeXEaoN2PJkt0pKSddxI "Click to download role pack") ([mirror](https://www.dropbox.com/s/xqaxvluy2ojv2kv/werewolves%20of%20heide%20role%20pack.rar?dl=0 "Click to download role pack")), which has a *README.txt* file with instructions how to set up the role pack (it's just a bit of copying and a few configuration edits).
 
 ### Managing the game
 Once you've added a role pack, you can start the server (*werewolves.jar*) again. The server has a **help** command that shows all (well, most) available commands. These are the ones that you will want to use right away:
